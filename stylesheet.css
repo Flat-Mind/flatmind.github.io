@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f70a0a
+}
+
+p {
+  font-size: 18px;
+  font-family: "游ゴシック体", YuGothic, "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+  padding-bottom: 5px;
+}
+
+.top {
+  list-style: none;
+}
+
+.main-container {
+  width: 1100px;
+  margin: 0 auto;
+  padding: 0 auto;
+  background-color: #fff;
+}
+
+
+.pandaheader {
+
+}
+
+.menu {
+  padding: 10px 0px 10px 0px;
+  overflow:hidden;
+}
+
+.movie {
+  float:left;
+  width: 32%;
+  margin-right: 2%;
+}
+
+.rakugaki {
+  float:left;
+  width: 32%;
+  margin-right: 2%;
+}
+
+.other {
+  float:left;
+  width: 32%;
+}
+
+.movie:hover,.rakugaki:hover,.other:hover {
+  opacity: 0.8;
+}
+
+.news {
+  float: left;
+  width: 70%;
+  padding: 20px 10px;
+  border: solid 5px #f54242;
+}
+
+.news ul {
+  margin: 0;
+  padding: 0;
+}
+
+.news li {
+  display: block;
+  padding: 5px;
+  /*お知らせ下のボーダー*/
+  border-bottom: dotted 2px #eb5757;
+  color: #000000;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.news time {
+  margin-right: 10px;
+  color: #f54242;
+  font-weight: bold;
+}
+
+.news h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #fa3e3e;
+}
+
+.news .text {
+  float: none;
+  width: auto;
+  margin-left: 60px;
+}
+
+.profire {
+  float: left;
+  width: 25%;
+  text-align: center;
+}
+
+.profire h1 {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #fa3e3e;
+}
+
+.profire h2 {
+  font-size: 15px
+}
+
+.profire p {
+  font-size: 11px;
+}
+
+.proicon {
+  width: 80px;
+  margin: 0 auto;
+}
+
+.footer {
+  width: 1100px;
+  height: 50px;
+  background-color: #2b2723;
+  text-align: center;
+  overflow:hidden;
+}
+
+.footer p {
+  line-height: 50px;
+  padding-left: 10px;
+  display: block;
+  color: white;
+  font-size: 10px;
+}
+
+.title {
+  padding:5px 10px;
+  color: #494949;
+
+  border-left: solid 5px #ff3b30;
+  margin: auto 20px;
+}
+
+.movie-container {
+  margin: 0 auto;
+  padding-left: 30px;
+
+}
+
+.movie-container h1 {
+  padding: 3px;/*文字周りの余白*/
+  margin-bottom: 20px;
+  border-left: solid 5px #ff4800;/*左線（実線 太さ 色）*/
+  font-size: 25px;
+  display: block;
+}
+
+.movie-midasi {
+  position: relative;
+  padding: 0px 10px 0px 0px;
+  float: left;
+  display: block;
+  z-index: 1;
+}
+
+.movie-midasi:hover {
+  opacity: 0.7;
+}
+
+.movie-midasi a {
+  position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-indent:-999px;
+    z-index: 2; /* 必要であればリンク要素の重なりのベース順序指定 */
+}
+
+.thumbnail {
+  width:200px;
+  height: 200px;
+  float:left;
+}
+
+.movie-title {
+  padding-left: 15px;
+  float:left;
+}
+
+.sum {
+  width: 100%;
+}
+
+.border p {
+  width: 100%;
+  margin: 10px 0px;
+  overflow:hidden;
+  border-bottom: 1px solid #b8b6b6;
+}
+
+.movie-review {
+  width: 750px;
+  margin: 0 auto;
+  padding-left: 30px;
+  float:left;
+}
+
+.name {
+  width: 750px;
+  background-color:#ff4800;
+  display: inline-block;
+  color:white;
+  padding: 15px 0px 15px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.main {
+  width: 600px;
+}
+
+.movie-information {
+  padding: 20px 0px 20px 0px;
+}
+
+.komidasi {
+  padding: 5px;
+  margin: 10px 0px;
+  text-shadow: 0 0 5px white;
+  border-left: solid 7px #ff4800;
+  border-top: solid 1px #ff4800;
+  border-right: solid 1px #ff4800;
+  border-bottom: solid 1px #ff4800;
+}
+
+/**
+ * スライダーの幅を指定しているだけ
+ */
+ .swiper-container {
+   width:500px;
+   height:160px;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   max-width: 1000px;
+   /*
+   次の画像をチラ見せしたければpaddingを指定する
+   padding: 0 15px;
+   */
+ }
+
+ .swiper-test {
+   padding-bottom: 50px;
+ }
