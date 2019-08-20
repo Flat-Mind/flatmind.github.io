@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FLAT MIND</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="dist/css/swiper.min.css">
+  </head>
+  <body>
+    <div class="main-container">
+      <a href="index.html"><img class="pandaheader" src="pandaheader.png" alt=""></a>
+      <div class="movie-container">
+        <h1>映画</h1>
+        <div class="swiper-test">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><a href="NoTLD.html"><img src="s_notr.png"></a></div>
+            <div class="swiper-slide"><img src="s_pierrot.png"></div>
+            <div class="swiper-slide"><img src="s_mother!.png"></div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination swiper-pagination-white"></div>
+          <!-- 前ページボタン -->
+	         <div class="swiper-button-prev swiper-button-black"></div>
+	          <!-- 次ページボタン -->
+	           <div class="swiper-button-next swiper-button-black"></div>
+        </div>
+      </div>
+        <div class="movie-midasi">
+          <a href="index.html"></a>
+          <div class="thumbnail">
+            <img class="sum" src="pierrot.png" alt="">
+          </div>
+          <div class="movie-title">
+            <h2>気狂いピエロ</h2>
+            <p>とある男女の逃避行は調子外れで、シュールで、哀しい。</p>
+          </div>
+        </div>
+        <div class="border">
+          <p></p>
+        </div>
+        <div class="movie-midasi">
+          <a href="NoTLD.html"></a>
+          <div class="thumbnail">
+            <img class="sum" src="notrd.jpg" alt="">
+          </div>
+          <div class="movie-title">
+            <h2>ナイト・オブ・ザ・リビングデッド</h2>
+            <p>「生ける屍」としてのゾンビの設定を確立させた不朽のゾンビ映画</p>
+          </div>
+        </div>
+        <div class="border">
+          <p></p>
+        </div>
+        <div class="movie-midasi">
+          <a href="NoTLD.html"></a>
+          <div class="thumbnail">
+            <img class="sum" src="mother!.png" alt="">
+          </div>
+          <div class="movie-title">
+            <h2>マザー！</h2>
+            <p>ダーレン・アロノフスキー作品史上 最も不快で、最も琴線に触れる問題作</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer">
+        <p>©2019 FLAT MIND All Rights Reserved.</p>
+      </div>
+    </div>
+    <script src="dist/js/swiper.js"></script>
+    <script type="text/javascript">
+    window.addEventListener('DOMContentLoaded', function() {
+      var swiper = new Swiper('.swiper-container', {
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
+        //新しいバージョン
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        //新しいバージョン
+        loop: true
+      });
+      }, false);
+    </script>
+  </body>
+</html>
