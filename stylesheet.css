@@ -148,7 +148,7 @@ p {
 
 .movie-container {
   margin: 0 auto;
-  padding-left: 30px;
+  padding:0px 30px 0px 30px;
 
 }
 
@@ -163,6 +163,7 @@ p {
 .movie-midasi {
   position: relative;
   padding: 0px 10px 0px 0px;
+  margin-bottom: 10px;
   float: left;
   display: block;
   z-index: 1;
@@ -197,6 +198,12 @@ p {
   width: 100%;
 }
 
+.sum2 {
+  width: 100%;
+  height: 100%;
+}
+
+
 .border p {
   width: 100%;
   margin: 10px 0px;
@@ -223,6 +230,10 @@ p {
 
 .main {
   width: 600px;
+}
+
+.main-b {
+  width: 500px;
 }
 
 .movie-information {
@@ -258,3 +269,51 @@ p {
  .swiper-test {
    padding-bottom: 50px;
  }
+
+ .s-gazo {
+   margin: 10px 10px;
+ }
+
+ .s-illut {
+   width:65px;
+   height: 65px;
+   display: block;
+ }
+
+ .s-illust:hover {
+   opacity: 0.8
+ }
+
+ /* 上に戻るボタン */
+.pagetop {
+	color: #fff;
+	background-color: rgba(0,0,0,0.3);
+	text-decoration: none;
+	display: none;
+	position: fixed;
+	bottom: 1rem;
+	right: 1rem;
+	font-size: 1.5rem;
+	width: 3.3rem;
+	height: 3.3rem;
+	line-height: 3.3rem;
+	border-radius: 3.3rem;
+	text-align: center;
+	cursor: pointer;
+}
+
+.pagetop:hover {
+	color: #fff !important;
+	background-color: #ed702b;
+	text-decoration: none;
+}
+/* 上に戻るボタン */
+
+.sub {
+  font-size: 18px;
+}
+
+.kaisetu {
+  font-size: 11px;
+  opacity: 0.7
+}
