@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>FLAT MIND</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <!--上に戻るボタン-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script>
+      jQuery(document).ready(function() {
+      var offset = 100;
+      var duration = 500;
+      jQuery(window).scroll(function() {
+        if (jQuery(this).scrollTop() > offset) {
+          jQuery('.pagetop').fadeIn(duration);
+        } else {
+          jQuery('.pagetop').fadeOut(duration);
+        }
+      });
+
+      jQuery('.pagetop').click(function(event) {
+        event.preventDefault();
+        jQuery('html, body').animate({scrollTop: 0}, duration);
+        return false;
+      })
+      });
+    </script>
+    <!--上に戻るボタン-->
+  </head>
+  <body>
+    <div class="main-container">
+      <a href="index.html"><img class="pandaheader" src="pandaheader.png" alt=""></a>
+      <div class="movie-review">
+        <h2 class="name">My favorite Green Day song 10<br><span class="sub">Green Day好きの個人的お気に入り曲10選！</span></h2>
+        <div class="sum-name">
+          <img class="main-b" src="billiejoe.jpg" alt="">
+            <h2 class="name">Green Dayとは？</h2>
+            <p>1987年に結成したアメリカ合衆国カリフォルニア州バークレー出身にして、ワタシが最も敬愛するパンク・ロックバンド。それがGreen Day！
+              <br>メインメンバーは<br>
+                  <strong>ビリー・ジョー・アームストロング（Vo/Gt/Pf/Hmc）<br>
+                  マイク・ダーント（Ba/Cho）<br>
+                  トレ・クール（Dr）<br></strong>
+                  以上の仲良し三人組。<br>
+                  2010年にグラミー賞を受賞し、2014年にはめでたくロックの殿堂入りを果たしました。<br>
+                  そんな彼らの楽曲を知ってもらうため、個人的にお気に入りの曲を寝る間を惜しんでチョイスしたのでご紹介させていただきます。なおランキングではありませんのであしからず。</p>
+            <h2 class="komidasi">その１　Longview</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Vy5XR-oxCus" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>リリース：1994年</h3>
+            <h3>初出アルバム：ドゥーキー</h3>
+            <p><br>初期のGreen Dayの楽曲はパンク・ロックらしく若者特有の悩みや青臭さを前面に出してます。このLongviewも然り。<br>退屈極まる日常から抜け出したい。でも何もやる気が起きない。そんな自分がたまらなく惨めに思えてくる…クラックブーム直撃世代で若いころからクスリをキメてたビリーたちのイライラ感、倦怠感が感じられる曲です。</p>
+            <h2 class="komidasi">その2　J.A.R.(Jason Andrew Relva)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/q6kRM-rX0Gw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>リリース：1995年</h3>
+            <h3>初出アルバム：インターナショナル・スーパーヒッツ!</h3>
+            <br>
+            <p>Green Dayのベーシスト、マイク・ダーントが交通事故で亡くなった友人に捧げたこの曲は、マイク自身が作曲をしています。曲の最後にビリーと共に口ずさむパートがお気に入り。マイクのベースから始まり、マイクのベースで終わるところも哀愁が感じられて良い。<br>ちなみに曲名は亡くなった友人の名前です。</p>
+            <h2 class="komidasi">その3　Good Riddance (Time of Your Life)</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/CnQ8N1KacJc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>リリース：1997年</h3>
+            <h3>初出アルバム：ニムロッド</h3>
+            <br>
+            <p>人生の岐路に立った主人公が再び歩み始めるこの曲は、アメリカの卒業ソングの定番であり、ライヴの最後にもよく歌われています。<br>It's something unpredictable, but in the end it's right.<br>(予測不能なことばかりだけど、行きつくところは正しいはずだ。)<br>このフレーズにはワタシ自身、何度も励まされました。<br>しかし「Good Riddance」は「いい厄介払い」という意味なんですよね。それを踏まえるとツンデレな曲に聴こえてきます。</p>
+            <h2 class="komidasi">その4　Minority</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/cDBlqu6KF4k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>リリース：2000年</h3>
+            <h3>初出アルバム：ウォーニング</h3>
+            <br>
+            <p>年を重ねるたびにこの曲の歌詞は深く突き刺さります。型にはまらない、それが自分の生き方だというビリーの率直な主張。マジョリティに対する批判。軽快なメロディから紡がれる深みのある歌詞が唯一無二のハーモニーを生み出しています。<br>それにしてものっけから<br>I want to be the minority<br>(俺は少数派になりたいんだ。)<br>だなんて最高にロックじゃないですか？</p>
+            <h2 class="komidasi">その5　American Idiot</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ee_uujKuJMI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>リリース：2004年</h3>
+            <h3>初出アルバム：アメリカン・イディオット</h3>
+            <br>
+            <p>Green Dayの代名詞とも言える曲を今更紹介するのも気が引けますが、間違いなくワタシの人生に影響を与えた大事な曲なので外すわけにはいきません。<br>曲名を直訳すると「アホなアメリカ人」になりますが、決してアメリカ人はアホだとディスっているわけではなく、メディアの言うことに踊らされ、自分で考えることを放棄するようなアホなアメリカ人にはなるな。ということを歌っています。リリースから１０年以上経っても、この曲が訴えているメッセージ性は衰えるどころか年々力強さを増していますね。</p>
+            <h2 class="komidasi">その6　American Eulogy</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/pVO5Cvv2oAU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p class="kaisetu">「最強ライヴ！」のパフォーマンスが素晴らしい。ドウモアリガトウ！</p>
+            <h3>リリース：2009年</h3>
+            <h3>初出アルバム：21世紀のブレイクダウン</h3>
+            <br>
+            <p>７作目のアルバム「アメリカン・イディオット」と８作目のアルバム「２１世紀のブレイクダウン」は収録曲全体を通してストーリー仕立てとなっている「パンク・オペラ」がコンセプトになっています。<br>アルバム終盤に収録されているこの曲の前半部は、銃社会、人種差別、常に不安に駆られる国民たちといった現代アメリカの問題点を。後半部からは曲調が変化し、労働者階級の主人公によるアメリカに対する怒りと絶望が歌われています。<br>自分たちが生きている世界は、労働者階級の犠牲の上に成り立っているウソと欺瞞に満ちた世界だと知った主人公の叫びが耳に残ります。<br>I don't wanna live in the modern world!<br>(こんな世界で生きたくない！)</p>
+            <h2 class="komidasi">その7　Stray Heart</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/sN0b-adUt9I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>リリース：2012年</h3>
+            <h3>初出アルバム：ドス！</h3>
+            <br>
+            <p>初めてこの曲を聴いたとき、サビのフレーズから恋愛ソングを想像したのですが、曲全体を通して聴いてみると、口先だけのダメ男の曲だとわかるところがなんともGreen Dayらしくて面白いですね。<br>聞こえの良い言葉をのたまう男ほど、心が迷子になっているものです。</p>
+            <h2 class="komidasi">その8　Dirty Rotten Bastards</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Tsn7pW8TcI4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>リリース：2012年</h3>
+            <h3>初出アルバム：トレ!</h3>
+            <br>
+            <p>3ヵ月連続でリリースされたアルバム「ウノ！」、「ドス！」、「トレ！」はビリー・ジョー曰く、「パーティの準備」、「パーティ真っ只中」「パーティ後のやれやれ感」をイメージしたとのこと。<br>「トレ！」の終盤に収録されているこの曲は、３枚のアルバムのイメージを一つにまとめあげたような仕上がりで、6分以上の曲でありながら聴いていてとても楽しいのです。</p>
+            <h2 class="komidasi">その9　Bang Bang</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/mg5Bp_Gzs0s" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>リリース：2016年</h3>
+            <h3>初出アルバム：レボリューション・レディオ</h3>
+            <br>
+            <p>近年、アメリカで多発している銃乱射事件の実行犯の視点に立って作詞したということもあり、歌詞のぶっ飛び具合がトップクラスです。<br>炎上覚悟で作詞したビリー・ジョー自身も恐ろしくなったと明言している、自己顕示欲と自己陶酔にまみれたサイコパスな歌詞には脱帽します。</p>
+            <h2 class="komidasi">その10　Still Breathing</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/SUzsih7QJSY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <h3>リリース：2016年</h3>
+            <h3>初出アルバム：レボリューション・レディオ</h3>
+            <br>
+            <p>ワタシは映画を観て感動することは多々ありましたが、音楽を聴いて感動することは今までありませんでした。この曲に出会うまでは。<br>「いままで辛いことはたくさんあったけど、自分はまだ生きている」ということを歌った解りやすい曲ですが、そこにはビリー・ジョー・アームストロングという男の半生が確かに込められており、ワタシ自身、この曲を聴きながら自分の人生を顧みると、こみ上げてくるものがあるのです。いままでよく生きてこられたなって。</p>
+            <h2 class="name">終わりに</h2>
+            <p>というわけでGreen Day好きによるお気に入り曲10選でした。<br>ここまでグダグダと駄文を書き連ねておいて恐縮ですが、やはり10曲だけ選ぶなんて無理がありました。他にも紹介したかった「Basket Case」とか「Hitchin'A Ride」とか「Holiday」とか「Letterbomb」とか「Castaway」とかetc...<br>とにかくまだまだ素晴らしい曲がたくさんあるので、興味が沸いたら是非CDを買って聴いてみてください。</p>
+            <br>
+        </div>
+      </div>
+      <div class="footer">
+        <p>©2019 FLAT MIND All Rights Reserved.</p>
+      </div>
+    </div>
+  </body>
+  <div class="pagetop">↑</div>
+</html>
