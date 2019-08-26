@@ -5,11 +5,33 @@
     <title>FLAT MIND</title>
     <link rel="stylesheet" href="stylesheet.css">
   </head>
+  <!--上に戻るボタン-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+  <script>
+    jQuery(document).ready(function() {
+    var offset = 100;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+      if (jQuery(this).scrollTop() > offset) {
+        jQuery('.pagetop').fadeIn(duration);
+      } else {
+        jQuery('.pagetop').fadeOut(duration);
+      }
+    });
+
+    jQuery('.pagetop').click(function(event) {
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
+    })
+    });
+  </script>
+  <!--上に戻るボタン-->
   <body>
     <div class="main-container">
       <a href="index.html"><img class="pandaheader" src="pandaheader.png" alt=""></a>
       <div class="movie-review">
-        <h2 class="name">ナイト・オブ・ザ・リビングデッド</h2>
+        <h2 class="name"><a name="link">ナイト・オブ・ザ・リビングデッド</a></h2>
         <div class="sum-name">
           <img class="main" src="notrd.jpg" alt="">
           <div class="movie-information">
@@ -29,10 +51,11 @@
             <br>
             <p>一軒の民家へと逃げ込んだ人間たちは、白人や黒人、年齢も子どもから大人まで様々。極限の状況下で協力し合おうとする者もいれば、自分が助かるために利己的な行動に走る者もおり、お互いの足を引っ張りあってばかり。最初はゾンビたちに対して嫌悪感を抱いていたはずが、徐々に人間たちのリアルな醜悪さへと傾いていきます。そして、戦慄のラストシーンによってその嫌悪感は完全に人間側へと向けられる。そこに至るまでのストーリーテリングの巧みさは見事としか言いようがありません。</p>
             <h2 class="komidasi">結局ゾンビって？</h2>
-            <p>極めて人間に近い非人間的存在であるがゆえに、ゾンビは様々なメタファーを表現する手段として、非常に優れたツールといえます。<br>ということで本作のゾンビは何を表しているのかをワタシなりに考えてみました。結果、<br>「ゾンビとは理想の人類像を体現した存在」という結論に達しました。<br>何をトンチキなことを…と思われるかもしれませんが、ここで本作のゾンビの特徴を挙げてみましょう。<br>・頭部を破壊しない限りほとんど不死。<br>・同族同士で争わない。<br>・人種差別をしない。（好き嫌いなく食べる）<br>以上のことを踏まえると、生物としては完璧ではないでしょうか？しかも大昔から人類が抱えている問題点をあっさりクリアしているのです。まさに理想的。<br>…ただし、<strong>“極めてシニカルに”</strong>です。</p>
+            <p>極めて人間に近い非人間的存在であるがゆえに、ゾンビは様々なメタファーを表現する手段として、非常に優れたツールといえます。<br>なので本作のゾンビは何を表しているのかをワタシなりに考えてみた結果、<br>「ゾンビとは理想の人類像を体現した存在」という結論に達しました。<br>何をトンチキなことを…と思われるかもしれませんが、ここで本作のゾンビの特徴を挙げてみましょう。<br>・頭部を破壊しない限りほとんど不死。<br>・同族同士で争わない。<br>・人種差別をしない。（好き嫌いなく食べる）<br>以上のことを踏まえると、生物としては完璧ではないでしょうか？しかも大昔から人類が抱えている問題点をあっさりクリアしているのです。まさに理想的。<br>…ただし、<strong>“極めてシニカルに”</strong>です。</p>
             <h2 class="komidasi">ジョージ・A・ロメロが生み出したもの</h2>
             <p>ロメロ監督が手掛けたゾンビ映画には人類に対する冷笑的な視線が多々見受けられており、本作の続編ともいえる「ゾンビ（原題：Dawn of the Dead）」は勿論のこと。さらに後の作品「ランド・オブ・ザ・デッド」では、なんと意思を持った個体が登場します。ゾンビも進化しているのです。<br>対して人間の方はというと、相も変わらず同族同士の争いも差別もなくならず、まるで進歩が感じられません。「ランド・オブ・ザ・デッド」では明らかにゾンビ側に感情移入してしまうような構成になっているところも強烈な皮肉ですね。</p><br>
             <p>ただ恐ろしいだけではない。こういったシニカルな要素を組み込むことによって、観た者の心に強いインパクトを与え、物事を考えさせられる。ジョージ・A・ロメロは素晴らしい発明を遺されました。</p>
+            <a href="#link"></a><!--<a name="link">へジャンプする-->
         </div>
       </div>
       <div class="footer">
@@ -40,4 +63,5 @@
       </div>
     </div>
   </body>
+  <div class="pagetop">↑</div>
 </html>
