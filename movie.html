@@ -4,19 +4,19 @@
     <meta charset="utf-8">
     <title>FLAT MIND</title>
     <link rel="stylesheet" href="stylesheet.css">
-    <link rel="stylesheet" href="swiper.css">
+    <link rel="stylesheet" href="dist/css/swiper.css">
   </head>
   <body>
     <div class="main-container">
-      <a href="index.html"><img class="pandaheader" src="pandaheader.png" alt=""></a>
+      <a href="index.html"><img class="pandaheader" src="image/pandaheader.png" alt=""></a>
       <div class="movie-container">
         <h1>映画</h1>
         <div class="swiper-test">
         <div class="swiper-container">
           <div class="swiper-wrapper">
-            <div class="swiper-slide"><a href="notld.html"><img src="s_notr.png"></a></div>
-            <div class="swiper-slide"><a href="pierrot.html"><img src="s_pierrot.png"></a></div>
-            <div class="swiper-slide"><img src="s_mother!.png"></div>
+            <div class="swiper-slide"><a href="NoTLD.html"><img src="image/s_notr.png"></a></div>
+            <div class="swiper-slide"><a href="pierrot.html"><img src="image/s_pierrot.png"></a></div>
+            <div class="swiper-slide"><a href="mother!.html"><img src="image/s_mother!.png"></a></div>
           </div>
 
           <div class="swiper-pagination"></div>
@@ -24,15 +24,15 @@
           <div class="swiper-button-next"></div>
           <div class="swiper-pagination swiper-pagination-white"></div>
           <!-- 前ページボタン -->
-	  <div class="swiper-button-prev swiper-button-black"></div>
-	  <!-- 次ページボタン -->
-	  <div class="swiper-button-next swiper-button-black"></div>
+	        <div class="swiper-button-prev swiper-button-black"></div>
+	        <!-- 次ページボタン -->
+	        <div class="swiper-button-next swiper-button-black"></div>
         </div>
       </div>
         <div class="movie-midasi">
           <a href="pierrot.html"></a>
           <div class="thumbnail">
-            <img class="sum" src="pierrot.png" alt="">
+            <img class="sum" src="image/pierrot.png" alt="">
           </div>
           <div class="movie-title">
             <h2>気狂いピエロ</h2>
@@ -43,9 +43,9 @@
           <p></p>
         </div>
         <div class="movie-midasi">
-          <a href="notld.html"></a>
+          <a href="NoTLD.html"></a>
           <div class="thumbnail">
-            <img class="sum" src="notrd.jpg" alt="">
+            <img class="sum" src="image/notrd.jpg" alt="">
           </div>
           <div class="movie-title">
             <h2>ナイト・オブ・ザ・リビングデッド</h2>
@@ -56,9 +56,9 @@
           <p></p>
         </div>
         <div class="movie-midasi">
-          <a href="NoTLD.html"></a>
+          <a href="mother.html"></a>
           <div class="thumbnail">
-            <img class="sum" src="mother!.png" alt="">
+            <img class="sum" src="image/mother!.png" alt="">
           </div>
           <div class="movie-title">
             <h2>マザー！</h2>
@@ -70,10 +70,15 @@
         <p>©2019 FLAT MIND All Rights Reserved.</p>
       </div>
     </div>
-    <script src="swiper.js"></script>
+    <script src="dist/js/swiper.js"></script>
     <script type="text/javascript">
     window.addEventListener('DOMContentLoaded', function() {
       var swiper = new Swiper('.swiper-container', {
+        //オート機能
+        autoplay: {
+          delay: 3000,
+        },
+        //オート機能
         pagination: {
           el: '.swiper-pagination',
           clickable: true,
@@ -84,9 +89,14 @@
           prevEl: '.swiper-button-prev',
         },
         //新しいバージョン
+        slidesPerView: 2,
+        centeredSlides : true,
+        spaceBetween: 10,
+        speed: 200,
         loop: true
       });
       }, false);
+      //アローボタンカスタマイズ　158から
     </script>
   </body>
 </html>
