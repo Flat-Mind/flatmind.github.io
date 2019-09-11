@@ -8,21 +8,21 @@
   <!--上に戻るボタン-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
   <script>
-    jQuery(document).ready(function() {
-    var offset = 100;
+    jQuery('.pagetop,.sidemenu').ready(function() {
+    var offset = 200;
     var duration = 500;
     jQuery(window).scroll(function() {
-      if (jQuery(this).scrollTop() > offset) {
-        jQuery('.pagetop').fadeIn(duration);
-      } else {
-        jQuery('.pagetop').fadeOut(duration);
-      }
+    if (jQuery(this).scrollTop() > offset) {
+      jQuery('.pagetop,.sidemenu').fadeIn(duration);
+    } else {
+      jQuery('.pagetop,.sidemenu').fadeOut(duration);
+    }
     });
 
     jQuery('.pagetop').click(function(event) {
-      event.preventDefault();
-      jQuery('html, body').animate({scrollTop: 0}, duration);
-      return false;
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
     })
     });
   </script>
@@ -57,6 +57,10 @@
             <p>ただ恐ろしいだけではない。こういったシニカルな要素を組み込むことによって、観た者の心に強いインパクトを与え、物事を考えさせられる。ジョージ・A・ロメロは素晴らしい発明を遺されました。</p>
             <a href="#link"></a><!--<a name="link">へジャンプする-->
         </div>
+      </div>
+      <div class="sidemenu">
+        <a href="illust.html" class="movie"><img class="side-movie" src="panda-rakugaki.png" alt=""></a>
+        <a href="other.html" class="other"><img class="side-rakugaki" src="panda-other.png" alt=""></a>
       </div>
       <div class="footer">
         <p>©2019 FLAT MIND All Rights Reserved.</p>
