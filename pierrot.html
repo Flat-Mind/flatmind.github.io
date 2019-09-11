@@ -7,21 +7,21 @@
       <!--上に戻るボタン-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
     <script>
-      jQuery(document).ready(function() {
-      var offset = 100;
+      jQuery('.pagetop,.sidemenu').ready(function() {
+      var offset = 200;
       var duration = 500;
       jQuery(window).scroll(function() {
-        if (jQuery(this).scrollTop() > offset) {
-          jQuery('.pagetop').fadeIn(duration);
+      if (jQuery(this).scrollTop() > offset) {
+        jQuery('.pagetop,.sidemenu').fadeIn(duration);
         } else {
-          jQuery('.pagetop').fadeOut(duration);
+        jQuery('.pagetop,.sidemenu').fadeOut(duration);
         }
       });
 
       jQuery('.pagetop').click(function(event) {
-        event.preventDefault();
-        jQuery('html, body').animate({scrollTop: 0}, duration);
-        return false;
+      event.preventDefault();
+      jQuery('html, body').animate({scrollTop: 0}, duration);
+      return false;
       })
       });
     </script>
@@ -51,6 +51,10 @@
             <h2 class="komidasi">ゴダール作品の魅力</h2>
             <p>絵でも文章でも、創作をしたことがある人間からしてみれば、セオリーから外れたものを作ることは容易ではありませんし、それが好意的に受け入れられるとも限りません。<br>ワタシがゴダール映画に惹かれる最大の理由は、プロが躊躇うような手法が億面のなく使われており、それが面白さに直結している点につきます。勿論、合わない作品もありますが。<br><br>「気狂いピエロ」は滑稽な要素が楽しいと思えるか否かによって好みが分かれる作品ですが、本作を観た人は必ずこう思うはずです。<br>「こんな変な映画、観たことない」</p>
         </div>
+      </div>
+      <div class="sidemenu">
+        <a href="illust.html" class="movie"><img class="side-movie" src="panda-rakugaki.png" alt=""></a>
+        <a href="other.html" class="other"><img class="side-rakugaki" src="panda-other.png" alt=""></a>
       </div>
       <div class="footer">
         <p>©2019 FLAT MIND All Rights Reserved.</p>
