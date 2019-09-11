@@ -218,8 +218,30 @@ p {
   float:left;
 }
 
+.sidemenu {
+  width: 300px;
+  float:left;
+  position: relative;
+  display: none;
+}
+
+.side-movie {
+  position: fixed;
+  right: 160px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.side-rakugaki {
+  position: fixed;
+  top: 440px;
+  right: 160px;
+  width: 250px;
+  margin: 0 auto;
+}
+
 .name {
-  width: 750px;
+  width: 735px;
   background-color:#ff4800;
   display: inline-block;
   color:white;
@@ -254,7 +276,7 @@ p {
  * スライダーの幅を指定しているだけ
  */
  .swiper-container {
-   width:500px;
+   width:1000px;
    height:160px;
    position: relative;
    margin-left: auto;
@@ -275,9 +297,7 @@ p {
  }
 
  .s-illut {
-   width:65px;
-   height: 65px;
-   display: block;
+   width: 50px;
  }
 
  .s-illust:hover {
